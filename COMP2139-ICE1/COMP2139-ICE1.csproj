@@ -7,4 +7,8 @@
         <RootNamespace>COMP2139_ICE1</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    </ItemGroup>
+
 </Project>
