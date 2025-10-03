@@ -50,6 +50,43 @@ namespace COMP2139_ICE1.Migrations
 
                     b.ToTable("Projects");
                 });
+
+            modelBuilder.Entity("COMP2139_ICE1.Models.ProjectTask", b =>
+                {
+                    b.Property<int>("ProjectTaskId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProjectTaskId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("ProjectTaskId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectTasks");
+                });
+
+            modelBuilder.Entity("COMP2139_ICE1.Models.ProjectTask", b =>
+                {
+                    b.HasOne("COMP2139_ICE1.Models.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+                });
 #pragma warning restore 612, 618
         }
     }
