@@ -20,15 +20,37 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                
+                <!-- Search Form -->
+                <!-- Lab 6 - Search Form in Navbar -->
+                <form class="d-flex align-items-center" asp-controller="Home" asp-action="GeneralSearch" method="get">
+                    <div class="input-group">
+                        <!-- Search Input -->
+                        <input class="form-control me-2" type="text" placeholder="Search..." name="SearchString" required>
+
+                        <!-- Dropdown for Search Type -->
+                        <select class="form-select me-2" name="searchType" required>
+                            <option value="" disabled selected>Select Search Type</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Tasks">Tasks</option>
+                        </select>
+
+                        <!-- Search Button -->
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="fa fa-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+                
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-home"></i>Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-home" style="color: #007bff"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-regular fa-address-card"></i>About</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-solid fa-info-circle" style="color: #007bff" ></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Project" asp-action="Index"><i class="fa-regular fa-address-card"></i>Project</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-briefcase" style="color: #007bff"></i>Project</a>
                     </li>
                 </ul>
             </div>

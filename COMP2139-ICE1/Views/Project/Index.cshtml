@@ -2,11 +2,15 @@
 @model List<Project>     
 @{ 
     ViewData["Title"] = "Projects"; 
+    // Search Parameters
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
 } 
 
 <h2>Projects</h2> 
 <a asp-action="Create" class="btn btn-primary">Create New Project</a>
-@if (Model.Any())   // to determine if there are any projects to display 
+@* to determine if there are any projects to display  *@
+@if (Model.Any())   
 { 
     <table class="table"> 
         <thead> 
@@ -43,6 +47,13 @@
     </table> 
 } 
 else 
-{ 
-    <p>No projects available.</p> 
+{
+    if (searchPerformed)
+    {
+        <p>No project names with name "@searchString" were found.</p>
+    }
+    else
+    {
+        <p>No projects available.</p>
+    }
 }

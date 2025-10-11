@@ -47,6 +47,7 @@ public class Project
     
     public string? Status { get; set; }
     
-    
-    
+    // One to Many: A Project can have 
+    public List<ProjectTask>? Tasks { get; set; } = new();
+
 }
