@@ -1,4 +1,5 @@
-﻿using COMP2139_ICE1.Models;
+﻿using COMP2139_ICE1.Areas.ProjectManagement.Models;
+using COMP2139_ICE1.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace COMP2139_ICE1.Data;
