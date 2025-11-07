@@ -7,10 +7,8 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 
-                <!-- Search Form -->
-                <!-- Lab 6 - Search Form in Navbar -->
-                <form class="d-flex align-items-center" asp-controller="Home" asp-action="GeneralSearch" method="get">
-                    <div class="input-group">
+                <!-- Search Form in Navbar -->
+                <form class="d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="GeneralSearch" method="get">                    <div class="input-group">
                         <!-- Search Input -->
                         <input class="form-control me-2" type="text" placeholder="Search..." name="SearchString" required>
 

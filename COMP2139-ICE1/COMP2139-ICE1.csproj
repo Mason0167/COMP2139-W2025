@@ -44,4 +44,8 @@
       <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Areas\ProjectManagement\Components\" />
+    </ItemGroup>
+
 </Project>

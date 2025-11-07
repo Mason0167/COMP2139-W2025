@@ -6,14 +6,11 @@ namespace COMP2139_ICE1.Data;
 
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {
-       
-        
-    }
-    
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
     public DbSet<Project> Projects { get; set; }
     public DbSet<ProjectTask> ProjectTasks { get; set; }
+    
+    public DbSet<ProjectComment> ProjectComments { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

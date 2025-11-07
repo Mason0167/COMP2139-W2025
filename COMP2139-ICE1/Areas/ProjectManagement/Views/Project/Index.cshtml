@@ -18,6 +18,7 @@
             <th>ID</th> 
             <th>Name</th> 
             <th>Description</th> 
+            <th>Summary</th>
             <th>Action</th>
 
             <!-- Add other project properties as needed --> 
@@ -27,20 +28,32 @@
         <!-- A foreach loop is used to iterate over each Project in the model and display its properties in the table rows. --> 
         @foreach (var project in Model) 
         { 
-            <tr> 
-                <td>@project.ProjectId</td> 
-                <td>@project.Name</td> 
-                <td>@project.Description</td> 
+            <tr>
+                <td>@project.ProjectId</td>
                 
-                <td>
-                    <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-info">Details</a> 
-                    <a asp-action="Delete" asp-route-id="@project.ProjectId" class="btn btn-danger">Delete</a> 
-                    <a asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-danger">Edit</a> 
-                    
-                    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project.ProjectId" class="btn btn-info">View Tasks</a> 
+                <td>@Html.DisplayFor(modelItem => project.Name, "ProjectName")</td> <!-- Uses ProjectName.cshtml -->
+                <td>@Html.DisplayFor(modelItem => project.Description, "ProjectDescription") <!-- Uses ProjectDescription.cshtml --></td>
 
-                </td> 
-                <!-- Render other project properties as needed --> 
+                <!--Week 10 - Lab 8 -- ViewComponent-->
+                <td>@await Component.InvokeAsync("ProjectSummary", new { projectId = project.ProjectId })</td>
+
+                @* //--Key takeaway-- *@
+                @* @await Component.InvokeAsync - Invokes a ViewComponent asynchronously, allowing it to render its content within the view *@
+                @* new { projectId = project.ProjectId } - Passes the project ID as a parameter to the ViewComponent *@
+                @* "ProjectSummary" - The name of the ViewComponent to be invoked, which corresponds to the ProjectSummaryViewComponent class *@
+                @* @Html.DisplayFor - Renders the specified property of the model using the default display template *@
+                @* "ProjectName" - A custom display template for rendering the project name *@
+                @* "ProjectDescription" - A custom display template for rendering the project description   *@
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@project.ProjectId" class="btn btn-danger">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-danger">Edit</a>
+
+                    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project.ProjectId" class="btn btn-info">View Tasks</a>
+
+                </td>
+                <!-- Render other project properties as needed -->
             </tr> 
         } 
         </tbody> 

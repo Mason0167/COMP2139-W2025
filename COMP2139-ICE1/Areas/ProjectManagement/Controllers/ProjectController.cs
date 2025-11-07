@@ -18,16 +18,9 @@ public class ProjectController : Controller
     
     
     [HttpGet("")]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        /*
-        var projects = new List<Project>()
-        {
-            new Project { ProjectId = 1, Name = "Project 1", Description = "First Project" },
-            // Feel free to add more projects here
-        };
-        */
-        var projects = _context.Projects.ToList();
+        var projects = await _context.Projects.ToListAsync();
         
         return View(projects);
     }

@@ -49,12 +49,12 @@ public class HomeController : Controller
         if (searchType == "projects")
         {
             // Redirect to Project search
-            return RedirectToAction(nameof(ProjectController.Search), "Project", new { searchString });
+            return RedirectToAction(nameof(ProjectController.Search), "Project", new { area = "ProjectManagement", searchString });
         }
         else if (searchType == "tasks")
         {               
             // Redirect to ProjectTask search
-            return RedirectToAction(nameof(ProjectTaskController.Search), "ProjectTask", new { searchString });             
+            return RedirectToAction(nameof(ProjectTaskController.Search), "ProjectTask", new { area = "ProjectManagement", searchString });             
         }
 
         // If searchType is invalid, redirect to Home page
