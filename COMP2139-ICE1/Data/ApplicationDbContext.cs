@@ -15,6 +15,8 @@ public class ApplicationDbContext : IdentityDbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        
         // Define One_to_Many Relationship: One Project has Many ProjectTasks
         modelBuilder.Entity<Project>()
             
