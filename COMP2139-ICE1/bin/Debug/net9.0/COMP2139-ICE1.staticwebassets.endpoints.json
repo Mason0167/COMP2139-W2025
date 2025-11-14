@@ -897,6 +897,304 @@
       ]
     },
     {
+      "Route": "js/ProjectComments.c4c3c573mk.js",
+      "AssetFile": "js/ProjectComments.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001406469761"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.c4c3c573mk.js",
+      "AssetFile": "js/ProjectComments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.c4c3c573mk.js.gz",
+      "AssetFile": "js/ProjectComments.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc="
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js.gz"
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js",
+      "AssetFile": "js/ProjectComments.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001406469761"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js",
+      "AssetFile": "js/ProjectComments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js.gz",
+      "AssetFile": "js/ProjectComments.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js.gz",
       "Selectors": [

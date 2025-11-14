@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xr2rLfEHI4CeaEUlwPcyG8OHU/D+stWdPiMVn41CLTU=",
+  "Hash": "CtXyPOveYHKL0COXot7omrecLj3ZrbQh6PPiWaigqLI=",
   "Source": "COMP2139-ICE1",
   "BasePath": "_content/COMP2139-ICE1",
   "Mode": "Default",
@@ -498,6 +498,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Identity": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fqfdzbbhbg-c4c3c573mk.gz",
+      "SourceId": "COMP2139-ICE1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/COMP2139-ICE1",
+      "RelativePath": "js/ProjectComments#[.{fingerprint=c4c3c573mk}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\ProjectComments.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "v1njt7rfpa",
+      "Integrity": "jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\ProjectComments.js"
     },
     {
       "Identity": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fsqznr1h1d-c2jlpeoesf.gz",
@@ -1443,6 +1464,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\ProjectComments.js",
+      "SourceId": "COMP2139-ICE1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\",
+      "BasePath": "_content/COMP2139-ICE1",
+      "RelativePath": "js/ProjectComments#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c4c3c573mk",
+      "Integrity": "HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ProjectComments.js"
     },
     {
       "Identity": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\site.js",
@@ -3916,6 +3958,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.c4c3c573mk.js",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fqfdzbbhbg-c4c3c573mk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001406469761"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.c4c3c573mk.js",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\ProjectComments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.c4c3c573mk.js.gz",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fqfdzbbhbg-c4c3c573mk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c4c3c573mk"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ProjectComments.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fqfdzbbhbg-c4c3c573mk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001406469761"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\wwwroot\\js\\ProjectComments.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFBVXwCHYHVdOqVgShRugjIU+nalzW3YWK0Llt6dipU="
+        }
+      ]
+    },
+    {
+      "Route": "js/ProjectComments.js.gz",
+      "AssetFile": "C:\\comp2139\\COMP2139\\COMP2139-ICE1\\COMP2139-ICE1\\obj\\Debug\\net9.0\\compressed\\fqfdzbbhbg-c4c3c573mk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 21:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jduygyyC2IWMYD+bf9p2FjEFSuNR7nCC+x/hi88sbcc="
         }
       ]
     },

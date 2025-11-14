@@ -307,3 +307,4 @@ C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\tr\Microsoft.C
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\ccazj6jrz0-atfnqop0lz.gz
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\fqfdzbbhbg-c4c3c573mk.gz
