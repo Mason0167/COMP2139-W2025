@@ -1,4 +1,7 @@
-﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">COMP2139_ICE1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -36,6 +39,33 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-briefcase" style="color: #007bff"></i>Project</a>
                     </li>
+                    
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               asp-area="Identity"
+                               asp-page="/Account/Manage/Index" title="Manage your account"><i class="fa fa-user-circle"></i>Profile</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                                <button type="submit" class="nav-link btn btn-link text-dark" style="cursor:pointer">Logout</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Identity"
+                               asp-page="/Account/Login"><i class="fa fa-sign-in-alt"></i> Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Identity"
+                               asp-page="/Account/Register"><i class="fa fa-user-plus"></i> Register</a>
+                        </li>
+                    }
+                    
                 </ul>
             </div>
         </div>

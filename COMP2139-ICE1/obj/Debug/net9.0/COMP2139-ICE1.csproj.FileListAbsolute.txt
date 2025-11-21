@@ -414,3 +414,8 @@ C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\a3y
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\MailKit.dll
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\MimeKit.dll
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\Polly.dll
+C:\comp2139\COMP2139\COMP2139-ICE1\COMP2139-ICE1\bin\Debug\net9.0\Polly.Core.dll
