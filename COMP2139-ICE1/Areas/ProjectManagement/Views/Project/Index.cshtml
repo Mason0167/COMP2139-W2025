@@ -34,7 +34,6 @@
                 <td>@Html.DisplayFor(modelItem => project.Name, "ProjectName")</td> <!-- Uses ProjectName.cshtml -->
                 <td>@Html.DisplayFor(modelItem => project.Description, "ProjectDescription") <!-- Uses ProjectDescription.cshtml --></td>
 
-                <!--Week 10 - Lab 8 -- ViewComponent-->
                 <td>@await Component.InvokeAsync("ProjectSummary", new { projectId = project.ProjectId })</td>
 
                 @* //--Key takeaway-- *@

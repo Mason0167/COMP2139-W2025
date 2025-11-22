@@ -47,7 +47,7 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.6.1": {
+      "BouncyCastle.Cryptography/2.3.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
@@ -654,11 +654,10 @@
           }
         }
       },
-      "MailKit/4.14.1": {
+      "MailKit/4.5.0": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "4.14.0",
-          "System.Formats.Asn1": "8.0.1"
+          "MimeKit": "4.5.0"
         },
         "compile": {
           "lib/net8.0/MailKit.dll": {
@@ -2281,11 +2280,11 @@
           }
         }
       },
-      "MimeKit/4.14.0": {
+      "MimeKit/4.5.0": {
         "type": "package",
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.6.1",
-          "System.Security.Cryptography.Pkcs": "8.0.1"
+          "BouncyCastle.Cryptography": "2.3.0",
+          "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "compile": {
           "lib/net8.0/MimeKit.dll": {
@@ -2536,23 +2535,23 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
-      "Polly/8.6.4": {
+      "Polly/8.2.0": {
         "type": "package",
         "dependencies": {
-          "Polly.Core": "8.6.4"
+          "Polly.Core": "8.2.0"
         },
         "compile": {
           "lib/net6.0/Polly.dll": {
-            "related": ".pdb;.xml"
+            "related": ".pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Polly.dll": {
-            "related": ".pdb;.xml"
+            "related": ".pdb"
           }
         }
       },
-      "Polly.Core/8.6.4": {
+      "Polly.Core/8.2.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Polly.Core.dll": {
@@ -3923,8 +3922,11 @@
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/8.0.1": {
+      "System.Security.Cryptography.Pkcs/8.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "8.0.0"
+        },
         "compile": {
           "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
@@ -4328,16 +4330,16 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "BouncyCastle.Cryptography/2.6.1": {
-      "sha512": "vZsG2YILhthgRqO+ZVgRff4ZFKKTl0v7kqaVBLCtRvpREhfBP33pcWrdA3PRYgWuFL1RxiUFvjMUHTdBZlJcoA==",
+    "BouncyCastle.Cryptography/2.3.0": {
+      "sha512": "IaVIiYxZLaBulveGDRUx/pBoW/Rc8QeXGF5u2E8xL8RWhVKCgfmtX9NUyGRbnSqnbFQU2zyP3MkXIdH+jUuQBw==",
       "type": "package",
-      "path": "bouncycastle.cryptography/2.6.1",
+      "path": "bouncycastle.cryptography/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
-        "bouncycastle.cryptography.2.6.1.nupkg.sha512",
+        "bouncycastle.cryptography.2.3.0.nupkg.sha512",
         "bouncycastle.cryptography.nuspec",
         "lib/net461/BouncyCastle.Cryptography.dll",
         "lib/net461/BouncyCastle.Cryptography.xml",
@@ -5094,10 +5096,10 @@
         "logo.png"
       ]
     },
-    "MailKit/4.14.1": {
-      "sha512": "Rawu+h3lSSjKra0AxR+IUB99VQ7jWI+MvxThekqLhf+ic7VQ7a69lmPFW+LXuRYHla4ADcn3x16Gsvju3LTq9w==",
+    "MailKit/4.5.0": {
+      "sha512": "EaXHODUdIV5oPdWvBJGazwaEpKt1LI/H/S//EEozANYCsfOSKHntX+Skk2kW616lSQp+fkRTmSjk0CYxEuOyEA==",
       "type": "package",
-      "path": "mailkit/4.14.1",
+      "path": "mailkit/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5118,6 +5120,10 @@
         "lib/net48/MailKit.dll.config",
         "lib/net48/MailKit.pdb",
         "lib/net48/MailKit.xml",
+        "lib/net6.0/MailKit.dll",
+        "lib/net6.0/MailKit.dll.config",
+        "lib/net6.0/MailKit.pdb",
+        "lib/net6.0/MailKit.xml",
         "lib/net8.0/MailKit.dll",
         "lib/net8.0/MailKit.dll.config",
         "lib/net8.0/MailKit.pdb",
@@ -5130,7 +5136,7 @@
         "lib/netstandard2.1/MailKit.dll.config",
         "lib/netstandard2.1/MailKit.pdb",
         "lib/netstandard2.1/MailKit.xml",
-        "mailkit.4.14.1.nupkg.sha512",
+        "mailkit.4.5.0.nupkg.sha512",
         "mailkit.nuspec"
       ]
     },
@@ -8087,10 +8093,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MimeKit/4.14.0": {
-      "sha512": "g0LtsMC8DCTkc030C3UgVqbltOJmV5cz4AX8ASowz2ZA+lxopXSYtC1XXYmenxy606aWFLwi5Xy4cC/zyYjbjQ==",
+    "MimeKit/4.5.0": {
+      "sha512": "OYn8b8b66J4mgtDzoImepiUtdkJOAVGoTj/ghzJ+az4wVixA5L5Z8GmgFhRvQ1btAIwZh/d9zvZLCALndQdz5w==",
       "type": "package",
-      "path": "mimekit/4.14.0",
+      "path": "mimekit/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8098,14 +8104,21 @@
         "docs/README.md",
         "icons/mimekit-50.png",
         "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.dll.config",
         "lib/net462/MimeKit.pdb",
         "lib/net462/MimeKit.xml",
         "lib/net47/MimeKit.dll",
+        "lib/net47/MimeKit.dll.config",
         "lib/net47/MimeKit.pdb",
         "lib/net47/MimeKit.xml",
         "lib/net48/MimeKit.dll",
+        "lib/net48/MimeKit.dll.config",
         "lib/net48/MimeKit.pdb",
         "lib/net48/MimeKit.xml",
+        "lib/net6.0/MimeKit.dll",
+        "lib/net6.0/MimeKit.dll.config",
+        "lib/net6.0/MimeKit.pdb",
+        "lib/net6.0/MimeKit.xml",
         "lib/net8.0/MimeKit.dll",
         "lib/net8.0/MimeKit.dll.config",
         "lib/net8.0/MimeKit.pdb",
@@ -8118,7 +8131,7 @@
         "lib/netstandard2.1/MimeKit.dll.config",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.4.14.0.nupkg.sha512",
+        "mimekit.4.5.0.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -8366,40 +8379,34 @@
         "nuget.versioning.nuspec"
       ]
     },
-    "Polly/8.6.4": {
-      "sha512": "uuBsDoBw0oYrMe3uTWRjkT2sIkKh+ZZnnDrLb4Z+QANfeA4+7FJacx6E8CY5GAxXRoSgFrvUADEAQ7DPF6fGiw==",
+    "Polly/8.2.0": {
+      "sha512": "KZm8iG29y6Mse7YntYYJSf5fGWuhYLliWgZaG/8NcuXS4gN7SPdtPYpjCxQlHqxvMGubkWVrGp3MvUaI7SkyKA==",
       "type": "package",
-      "path": "polly/8.6.4",
+      "path": "polly/8.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
         "lib/net462/Polly.dll",
         "lib/net462/Polly.pdb",
-        "lib/net462/Polly.xml",
         "lib/net472/Polly.dll",
         "lib/net472/Polly.pdb",
-        "lib/net472/Polly.xml",
         "lib/net6.0/Polly.dll",
         "lib/net6.0/Polly.pdb",
-        "lib/net6.0/Polly.xml",
         "lib/netstandard2.0/Polly.dll",
         "lib/netstandard2.0/Polly.pdb",
-        "lib/netstandard2.0/Polly.xml",
         "package-icon.png",
         "package-readme.md",
-        "polly.8.6.4.nupkg.sha512",
+        "polly.8.2.0.nupkg.sha512",
         "polly.nuspec"
       ]
     },
-    "Polly.Core/8.6.4": {
-      "sha512": "4AWqYnQ2TME0E+Mzovt1Uu+VyvpR84ymUldMcPw7Mbj799Phaag14CKrMtlJGx5jsvYP+S3oR1QmysgmXoD5cw==",
+    "Polly.Core/8.2.0": {
+      "sha512": "gnKp3+mxGFmkFs4eHcD9aex0JOF8zS1Y18c2A5ckXXTVqbs6XLcDyLKgSa/mUFqAnH3mn9+uVIM0RhAec/d3kA==",
       "type": "package",
-      "path": "polly.core/8.6.4",
+      "path": "polly.core/8.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
         "lib/net462/Polly.Core.dll",
         "lib/net462/Polly.Core.pdb",
         "lib/net462/Polly.Core.xml",
@@ -8417,7 +8424,7 @@
         "lib/netstandard2.0/Polly.Core.xml",
         "package-icon.png",
         "package-readme.md",
-        "polly.core.8.6.4.nupkg.sha512",
+        "polly.core.8.2.0.nupkg.sha512",
         "polly.core.nuspec"
       ]
     },
@@ -11612,10 +11619,10 @@
         "system.security.cryptography.openssl.nuspec"
       ]
     },
-    "System.Security.Cryptography.Pkcs/8.0.1": {
-      "sha512": "CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+    "System.Security.Cryptography.Pkcs/8.0.0": {
+      "sha512": "ULmp3xoOwNYjOYp4JZ2NK/6NdTgiN1GQXzVVN1njQ7LOZ0d0B9vyMnhyqbIi9Qw4JXj1JgCsitkTShboHRx7Eg==",
       "type": "package",
-      "path": "system.security.cryptography.pkcs/8.0.1",
+      "path": "system.security.cryptography.pkcs/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11644,7 +11651,7 @@
         "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+        "system.security.cryptography.pkcs.8.0.0.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -12618,16 +12625,17 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "MailKit >= 4.14.1",
+      "MailKit >= 4.5.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.11",
       "Microsoft.EntityFrameworkCore >= 9.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.11",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
+      "MimeKit >= 4.5.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
-      "Polly >= 8.6.4"
+      "Polly >= 8.2.0"
     ]
   },
   "packageFolders": {
@@ -12682,7 +12690,7 @@
         "dependencies": {
           "MailKit": {
             "target": "Package",
-            "version": "[4.14.1, )"
+            "version": "[4.5.0, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
@@ -12710,6 +12718,10 @@
             "target": "Package",
             "version": "[9.0.0, )"
           },
+          "MimeKit": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[9.0.1, )"
@@ -12720,7 +12732,7 @@
           },
           "Polly": {
             "target": "Package",
-            "version": "[8.6.4, )"
+            "version": "[8.2.0, )"
           }
         },
         "imports": [
@@ -12745,5 +12757,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MimeKit' 4.5.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5",
+      "libraryId": "MimeKit",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

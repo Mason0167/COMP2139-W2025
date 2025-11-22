@@ -16,7 +16,7 @@ public class ProjectController : Controller
         _context = context;
     }
     
-    
+    // Retrieves all Project records from the database and converts the result into a list, then display.
     [HttpGet("")]
     public async Task<IActionResult> Index()
     {
@@ -25,12 +25,14 @@ public class ProjectController : Controller
         return View(projects);
     }
     
+    // Displays the empty form for creating a new project.
     [HttpGet("Create")]
     public IActionResult Create()
     {
         return View();
     }
 
+    // Handles the form submission when the user clicks "Save" on the create page.
     [HttpPost("Create")]
     [ValidateAntiForgeryToken]
     public IActionResult Create(Project project)

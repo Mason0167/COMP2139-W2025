@@ -16,6 +16,7 @@ public class ProjectTaskController : Controller
         _context = context; 
     } 
 
+    // Displays a list of tasks that belong to a specific project, based on the projectId passed in the URL.
     [HttpGet("Index/{projectId:int}")] 
     public IActionResult Index(int projectId) 
     { 
@@ -27,6 +28,7 @@ public class ProjectTaskController : Controller
         return View(tasks); 
     } 
 
+    // Shows detailed information about a single task, based on the task id.
     [HttpGet("Details/{Id:int}")] 
     public IActionResult Details(int id) 
     { 
@@ -43,7 +45,7 @@ public class ProjectTaskController : Controller
         return View(task); 
     } 
 
-    
+    // Shows the form for creating a new task under a specific project
     [HttpGet("Create/{projectId:int}")] 
     public IActionResult Create(int projectId) 
     { 
@@ -63,6 +65,7 @@ public class ProjectTaskController : Controller
         return View(task); 
     } 
 
+    // Saves the submitted task form to the database.
     [HttpPost("Create/{projectId:int}")] 
     [ValidateAntiForgeryToken] 
     public IActionResult Create([Bind("Title", "Description", "ProjectId")] ProjectTask task) 
@@ -80,7 +83,7 @@ public class ProjectTaskController : Controller
     } 
 
  
-
+    // Loads the existing task data and displays it in an edit form so the user can modify it.
     [HttpGet("Edit/{id:int}")] 
     public IActionResult Edit(int id) 
     { 
@@ -98,6 +101,7 @@ public class ProjectTaskController : Controller
         return View(task); 
     } 
 
+    // Receives the updated task data from the form, saves the changes to the database, and redirects back to the task list.
     [HttpPost("Edit/{id:int}")] 
     [ValidateAntiForgeryToken] 
     public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "ProjectId")] ProjectTask task) 
@@ -118,6 +122,7 @@ public class ProjectTaskController : Controller
         return View(task); 
     } 
     
+    // Displays a confirmation page showing the task details before deleting it.
     [HttpGet("Delete/{id:int}")] 
     public IActionResult Delete(int id) 
     { 
@@ -134,6 +139,7 @@ public class ProjectTaskController : Controller
         return View(task); 
     } 
     
+    // Deletes the selected task from the database and redirects back to the project’s task list.
     [HttpPost("DeleteConfirmed/{projectTaskId:int}")] 
     [ValidateAntiForgeryToken] 
     public IActionResult DeleteConfirmed(int projectTaskId) 
@@ -148,6 +154,7 @@ public class ProjectTaskController : Controller
         return NotFound(); 
     }
     
+    // Searches tasks based on a search string and returns a filtered task list to the same Index view.
     // GET: ProjectTasks/Search/{projectId?}/{searchString?}
     [HttpGet("Search")]
     public async Task<IActionResult> Search(int? projectId, string searchString)

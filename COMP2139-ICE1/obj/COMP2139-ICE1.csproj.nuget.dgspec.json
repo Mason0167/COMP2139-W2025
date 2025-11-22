@@ -52,7 +52,7 @@
           "dependencies": {
             "MailKit": {
               "target": "Package",
-              "version": "[4.14.1, )"
+              "version": "[4.5.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -80,6 +80,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -90,7 +94,7 @@
             },
             "Polly": {
               "target": "Package",
-              "version": "[8.6.4, )"
+              "version": "[8.2.0, )"
             }
           },
           "imports": [

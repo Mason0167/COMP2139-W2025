@@ -8,16 +8,17 @@
     ".NETCoreApp,Version=v9.0": {
       "COMP2139-ICE1/1.0.0": {
         "dependencies": {
-          "MailKit": "4.14.1",
+          "MailKit": "4.5.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.11",
           "Microsoft.AspNetCore.Identity.UI": "9.0.11",
           "Microsoft.EntityFrameworkCore": "9.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.11",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
+          "MimeKit": "4.5.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
-          "Polly": "8.6.4"
+          "Polly": "8.2.0"
         },
         "runtime": {
           "COMP2139-ICE1.dll": {}
@@ -58,11 +59,11 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.6.1": {
+      "BouncyCastle.Cryptography/2.3.0": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.6.1.59591"
+            "fileVersion": "2.3.0.53016"
           }
         }
       },
@@ -606,15 +607,14 @@
           }
         }
       },
-      "MailKit/4.14.1": {
+      "MailKit/4.5.0": {
         "dependencies": {
-          "MimeKit": "4.14.0",
-          "System.Formats.Asn1": "9.0.11"
+          "MimeKit": "4.5.0"
         },
         "runtime": {
           "lib/net8.0/MailKit.dll": {
-            "assemblyVersion": "4.14.0.0",
-            "fileVersion": "4.14.1.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
@@ -1855,15 +1855,15 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "MimeKit/4.14.0": {
+      "MimeKit/4.5.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.6.1",
-          "System.Security.Cryptography.Pkcs": "8.0.1"
+          "BouncyCastle.Cryptography": "2.3.0",
+          "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/MimeKit.dll": {
-            "assemblyVersion": "4.14.0.0",
-            "fileVersion": "4.14.0.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
@@ -2036,7 +2036,7 @@
           "Newtonsoft.Json": "13.0.3",
           "NuGet.Configuration": "6.11.0",
           "NuGet.Versioning": "6.11.0",
-          "System.Security.Cryptography.Pkcs": "8.0.1"
+          "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "runtime": {
           "lib/net5.0/NuGet.Packaging.dll": {
@@ -2075,22 +2075,22 @@
           }
         }
       },
-      "Polly/8.6.4": {
+      "Polly/8.2.0": {
         "dependencies": {
-          "Polly.Core": "8.6.4"
+          "Polly.Core": "8.2.0"
         },
         "runtime": {
           "lib/net6.0/Polly.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.4.5033"
+            "fileVersion": "8.2.0.2702"
           }
         }
       },
-      "Polly.Core/8.6.4": {
+      "Polly.Core/8.2.0": {
         "runtime": {
           "lib/net8.0/Polly.Core.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.4.5033"
+            "fileVersion": "8.2.0.2702"
           }
         }
       },
@@ -2734,7 +2734,11 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
-      "System.Security.Cryptography.Pkcs/8.0.1": {},
+      "System.Security.Cryptography.Pkcs/8.0.0": {
+        "dependencies": {
+          "System.Formats.Asn1": "9.0.11"
+        }
+      },
       "System.Security.Cryptography.Primitives/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -2902,12 +2906,12 @@
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.6.1": {
+    "BouncyCastle.Cryptography/2.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vZsG2YILhthgRqO+ZVgRff4ZFKKTl0v7kqaVBLCtRvpREhfBP33pcWrdA3PRYgWuFL1RxiUFvjMUHTdBZlJcoA==",
-      "path": "bouncycastle.cryptography/2.6.1",
-      "hashPath": "bouncycastle.cryptography.2.6.1.nupkg.sha512"
+      "sha512": "sha512-IaVIiYxZLaBulveGDRUx/pBoW/Rc8QeXGF5u2E8xL8RWhVKCgfmtX9NUyGRbnSqnbFQU2zyP3MkXIdH+jUuQBw==",
+      "path": "bouncycastle.cryptography/2.3.0",
+      "hashPath": "bouncycastle.cryptography.2.3.0.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",
@@ -3259,12 +3263,12 @@
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
     },
-    "MailKit/4.14.1": {
+    "MailKit/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Rawu+h3lSSjKra0AxR+IUB99VQ7jWI+MvxThekqLhf+ic7VQ7a69lmPFW+LXuRYHla4ADcn3x16Gsvju3LTq9w==",
-      "path": "mailkit/4.14.1",
-      "hashPath": "mailkit.4.14.1.nupkg.sha512"
+      "sha512": "sha512-EaXHODUdIV5oPdWvBJGazwaEpKt1LI/H/S//EEozANYCsfOSKHntX+Skk2kW616lSQp+fkRTmSjk0CYxEuOyEA==",
+      "path": "mailkit/4.5.0",
+      "hashPath": "mailkit.4.5.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/9.0.11": {
       "type": "package",
@@ -3742,12 +3746,12 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
-    "MimeKit/4.14.0": {
+    "MimeKit/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-g0LtsMC8DCTkc030C3UgVqbltOJmV5cz4AX8ASowz2ZA+lxopXSYtC1XXYmenxy606aWFLwi5Xy4cC/zyYjbjQ==",
-      "path": "mimekit/4.14.0",
-      "hashPath": "mimekit.4.14.0.nupkg.sha512"
+      "sha512": "sha512-OYn8b8b66J4mgtDzoImepiUtdkJOAVGoTj/ghzJ+az4wVixA5L5Z8GmgFhRvQ1btAIwZh/d9zvZLCALndQdz5w==",
+      "path": "mimekit/4.5.0",
+      "hashPath": "mimekit.4.5.0.nupkg.sha512"
     },
     "Mono.TextTemplating/3.0.0": {
       "type": "package",
@@ -3854,19 +3858,19 @@
       "path": "nuget.versioning/6.11.0",
       "hashPath": "nuget.versioning.6.11.0.nupkg.sha512"
     },
-    "Polly/8.6.4": {
+    "Polly/8.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uuBsDoBw0oYrMe3uTWRjkT2sIkKh+ZZnnDrLb4Z+QANfeA4+7FJacx6E8CY5GAxXRoSgFrvUADEAQ7DPF6fGiw==",
-      "path": "polly/8.6.4",
-      "hashPath": "polly.8.6.4.nupkg.sha512"
+      "sha512": "sha512-KZm8iG29y6Mse7YntYYJSf5fGWuhYLliWgZaG/8NcuXS4gN7SPdtPYpjCxQlHqxvMGubkWVrGp3MvUaI7SkyKA==",
+      "path": "polly/8.2.0",
+      "hashPath": "polly.8.2.0.nupkg.sha512"
     },
-    "Polly.Core/8.6.4": {
+    "Polly.Core/8.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4AWqYnQ2TME0E+Mzovt1Uu+VyvpR84ymUldMcPw7Mbj799Phaag14CKrMtlJGx5jsvYP+S3oR1QmysgmXoD5cw==",
-      "path": "polly.core/8.6.4",
-      "hashPath": "polly.core.8.6.4.nupkg.sha512"
+      "sha512": "sha512-gnKp3+mxGFmkFs4eHcD9aex0JOF8zS1Y18c2A5ckXXTVqbs6XLcDyLKgSa/mUFqAnH3mn9+uVIM0RhAec/d3kA==",
+      "path": "polly.core/8.2.0",
+      "hashPath": "polly.core.8.2.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -4428,12 +4432,12 @@
       "path": "system.security.cryptography.openssl/4.3.0",
       "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Pkcs/8.0.1": {
+    "System.Security.Cryptography.Pkcs/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
-      "path": "system.security.cryptography.pkcs/8.0.1",
-      "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
+      "sha512": "sha512-ULmp3xoOwNYjOYp4JZ2NK/6NdTgiN1GQXzVVN1njQ7LOZ0d0B9vyMnhyqbIi9Qw4JXj1JgCsitkTShboHRx7Eg==",
+      "path": "system.security.cryptography.pkcs/8.0.0",
+      "hashPath": "system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",
