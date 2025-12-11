@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\COMP2139-ICE1.props" />
-</Project>
