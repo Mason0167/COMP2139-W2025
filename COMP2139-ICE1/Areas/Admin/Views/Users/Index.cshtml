@@ -1,18 +1,39 @@
-﻿@model TModel
+﻿@model IEnumerable<COMP2139_ICE1.Areas.Admin.Models.ViewModels.UserRoleViewModel>
 
 @{
-    Layout = null;
+    // Specifies the layout file for this view.
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+@*
+    This view displays a list of all registered users in the system
+    along with the roles assigned to each user. It provides a link to manage
+    the roles for each individual user.
+*@
+<h2>Users</h2>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Email</th>
+        <th>Roles</th>
+        <th>Manage</th> @* Column for action links like Manage Roles *@
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>@string.Join(", ", user.Roles)</td>
+            <td>
+                <a href="@Url.Action("Manage", "Users", new { area = "Admin", id = @user.UserId })" 
+                   class="btn btn-primary btn-sm">
+                    Manage Roles
+                </a>
+
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

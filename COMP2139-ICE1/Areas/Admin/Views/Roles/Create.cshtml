@@ -1,18 +1,20 @@
-﻿@model TModel
-
-@{
-    Layout = null;
+﻿@{
+    // Specifies the layout file for this view.
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+@*
+    This view provides a form for administrators to create a new role.
+    The form captures the name of the new role.
+*@
+<h2>Create Role</h2>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<form method="post">
+    <div class="form-group">
+        <label>Role Name</label>
+        <input name="name" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Create</button>
+    <a href="@Url.Action("Index", "Roles", new { area = "Admin" })" class="btn btn-secondary mt-3">Cancel</a>
+</form>

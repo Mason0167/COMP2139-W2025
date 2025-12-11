@@ -2,6 +2,7 @@ using System.Diagnostics;
 using COMP2139_ICE1.Areas.ProjectManagement.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using COMP2139_ICE1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace COMP2139_ICE1.Controllers;
 
@@ -19,6 +20,7 @@ public class HomeController : Controller
         return View();
     }
     
+    [Authorize(Roles = "Admin, Manager")]
     public IActionResult About()
     {
         return View();

@@ -1,5 +1,6 @@
 ﻿using COMP2139_ICE1.Areas.ProjectManagement.Models;
 using COMP2139_ICE1.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,8 +17,10 @@ public class ProjectController : Controller
         _context = context;
     }
     
+    
     // Retrieves all Project records from the database and converts the result into a list, then display.
     [HttpGet("")]
+    [Authorize(Roles = "Admin, Manager")]
     public async Task<IActionResult> Index()
     {
         var projects = await _context.Projects.ToListAsync();

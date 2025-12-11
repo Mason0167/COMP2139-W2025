@@ -1,18 +1,20 @@
-﻿@model TModel
-
+﻿@model Microsoft.AspNetCore.Identity.IdentityRole
 @{
-    Layout = null;
+    // Specifies the layout file for this view.
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+@*
+    This view displays a confirmation page for deleting a specific role.
+    It shows the name of the role to be deleted and requires confirmation.
+*@
+<h2>Delete Role</h2>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<p>Are you sure you want to delete: <strong>@Model.Name</strong>?</p>
+
+<form asp-area="Admin" asp-controller="Roles" asp-action="Delete" method="post">
+    @* AntiForgeryToken is crucial for preventing Cross-Site Request Forgery (CSRF) attacks. *@
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index", "Roles", new { area = "Admin" })" class="btn btn-secondary ms-2">Cancel</a>
+</form>
