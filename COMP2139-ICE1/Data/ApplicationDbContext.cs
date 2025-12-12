@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace COMP2139_ICE1.Data;
 
-public class ApplicationDbContext : IdentityDbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
     public DbSet<Project> Projects { get; set; }

@@ -1,4 +1,5 @@
 using COMP2139_ICE1.Data;
+using COMP2139_ICE1.Models;
 using COMP2139_ICE1.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -64,7 +65,7 @@ using (var scope = app.Services.CreateScope())
     // Retrieve RoleManager and UserManager services from the service provider.
     // These services are essential for interacting with the Identity system for roles and users.
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
     // Define the application's roles. These roles will be created if they don't already exist.
     string[] roles = { "Admin", "Manager", "User" };
@@ -86,7 +87,7 @@ using (var scope = app.Services.CreateScope())
     // If the admin user does not exist, create a new IdentityUser instance.
     if (admin == null)
     {
-        admin = new IdentityUser
+        admin = new ApplicationUser
         {
             UserName = adminEmail,
             Email = adminEmail,

@@ -1,19 +1,25 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
+@using COMP2139_ICE1.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">COMP2139_ICE1</a>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-star" style="color: gold"></i>COMP2139 GBC Project Management – Sir Sir</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-
-                <!-- Search Form in Navbar -->
-                <form class="d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="GeneralSearch" method="get">                    <div class="input-group">
+            
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                
+                <!-- Lab 6 -->
+                <!-- Search Form -->
+                <!-- Lab 6 - Search Form in Navbar -->
+                <form class="d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="GeneralSearch" method="get"><!--Lab7-->
+                    <div class="input-group">
                         <!-- Search Input -->
-                        <input class="form-control me-2" type="text" placeholder="Search..." name="SearchString" required>
+                        <input class="form-control me-2" type="text" placeholder="Search..." name="searchString" required>
 
                         <!-- Dropdown for Search Type -->
                         <select class="form-select me-2" name="searchType" required>
@@ -28,29 +34,51 @@
                         </button>
                     </div>
                 </form>
-
-                <ul class="navbar-nav flex-grow-1">
+                
+                
+                <ul class="navbar-nav flex-grow-1 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-home" style="color: #007bff"></i>Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-home" style="color: #007bff;"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-solid fa-info-circle" style="color: #007bff" ></i>About</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-solid fa-info-circle" style="color: #28a745;"></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-briefcase" style="color: #007bff"></i>Project</a>
+                        <a class="nav-link text-dark" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-briefcase" style="color: #6f42c1;"></i>Project</a>
                     </li>
                     
+                    <!-- Lab 10 -->
                     @if (SignInManager.IsSignedIn(User))
                     {
+                        var user = await UserManager.GetUserAsync(User);
+                        var hasProfilePicture = user?.ProfilePicture != null && user.ProfilePicture.Length > 0;
+                        var userId = user?.Id;
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark"
+                            <a class="nav-link text-dark d-flex align-items-center"
                                asp-area="Identity"
-                               asp-page="/Account/Manage/Index" title="Manage your account"><i class="fa fa-user-circle"></i>Profile</a>
+                               asp-page="/Account/Manage/Index" title="Manage your account">
+                               @if (hasProfilePicture)
+                               {
+                                   <img src="@Url.Action("GetProfilePicture", "Profile", new { userId = userId })" 
+                                        alt="@UserManager.GetUserName(User)" 
+                                        class="rounded-circle me-2" 
+                                        style="width: 35px; height: 35px; object-fit: cover;" />
+                               }
+                               else
+                               {
+                                   <span class="rounded-circle me-2 d-flex align-items-center justify-content-center" 
+                                         style="width: 35px; height: 35px; background-color: #e9ecef; color: #6c757d;">
+                                       <i class="fa fa-user"></i>
+                                   </span>
+                               }
+                               <span>Profile</span>
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <form asp-area="Identity" asp-page="/Account/Logout" method="post">
-                                <button type="submit" class="nav-link btn btn-link text-dark" style="cursor:pointer"><i class="fa fa-sign-out-alt"></i>Logout</button>
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="d-inline">
+                                <button type="submit" class="nav-link btn btn-link text-dark" style="cursor:pointer"><i class="fa fa-sign-out-alt"></i> Logout</button>
                             </form>
                         </li>
                     }
@@ -65,6 +93,8 @@
                                asp-page="/Account/Register"><i class="fa fa-user-plus"></i> Register</a>
                         </li>
                     }
+                    
+                    <!-- Lab 11 -->
                     @if (User.IsInRole("Admin"))
                     {
                         <li class="nav-item dropdown">
@@ -77,6 +107,7 @@
                             </ul>
                         </li>
                     }
+                    
                 </ul>
             </div>
         </div>

@@ -8,23 +8,33 @@
 <h3>@ViewData["Title"]</h3>
 <partial name="_StatusMessage" for="StatusMessage" />
 <div class="row">
-    <div class="col-md-6">
-        <form id="profile-form" method="post">
+    <div class="col-md-8">
+        <form id="profile-form" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+            <!-- Username Section -->
             <div class="form-floating mb-3">
                 <input asp-for="Username" class="form-control" placeholder="Please choose your username." disabled />
                 <label asp-for="Username" class="form-label"></label>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
-                <label asp-for="Input.PhoneNumber" class="form-label"></label>
+
+            <!-- Phone Number Section -->
+            <div class="mb-4">
+                <label class="form-label"><strong>Phone Number</strong></label>
+                <input type="tel" asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                <small class="text-muted">Changes: @Model.PhoneNumberChangeCount</small>
             </div>
+
+            <!-- Profile Picture Section -->
+            <div class="mb-4">
+                <label asp-for="Input.ProfilePictureFile" class="form-label"><strong>Profile Picture</strong></label>
+                <input type="file" asp-for="Input.ProfilePictureFile" class="form-control" accept="image/*" />
+                <small class="text-muted">Max size: 5MB. Supported formats: JPEG, PNG, GIF, WebP</small>
+                <span asp-validation-for="Input.ProfilePictureFile" class="text-danger"></span>
+            </div>
+
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
     </div>
 </div>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}

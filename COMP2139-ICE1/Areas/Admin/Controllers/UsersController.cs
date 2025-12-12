@@ -1,4 +1,5 @@
 ﻿using COMP2139_ICE1.Areas.Admin.Models.ViewModels;
+using COMP2139_ICE1.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,7 @@ namespace COMP2139_ICE1.Areas.Admin.Controllers
     [Authorize(Roles = "Admin, Manager")]
     public class UsersController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
         /// <summary>
@@ -21,7 +22,7 @@ namespace COMP2139_ICE1.Areas.Admin.Controllers
         /// </summary>
         /// <param name="userManager">The UserManager instance used for managing users.</param>
         /// <param name="roleManager">The RoleManager instance used for managing roles.</param>
-        public UsersController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        public UsersController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
