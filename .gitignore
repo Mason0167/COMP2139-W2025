@@ -16,6 +16,7 @@ out/
 
 # ASP.NET / .NET Core
 appsettings.Development.json
+appsettings.json
 
 # Publish / deployment
 *.Publish.xml
